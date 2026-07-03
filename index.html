@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diamonds and More — Fine Diamond Jewellery Manufacturing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --black:#08080a;
@@ -21,19 +21,21 @@
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
+  [id]{scroll-margin-top:100px;}
   body{
     background:var(--black);
     color:var(--silver);
-    font-family:'Jost',sans-serif;
-    font-weight:300;
+    font-family:'Inter',sans-serif;
+    font-weight:400;
     overflow-x:hidden;
     -webkit-font-smoothing:antialiased;
   }
   ::selection{background:var(--silver-bright);color:var(--black);}
 
   h1,h2,h3,.serif{
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Bodoni Moda',serif;
     font-weight:500;
+    font-style:normal;
     color:var(--silver-bright);
     letter-spacing:.01em;
   }
@@ -83,7 +85,7 @@
   }
   .brand{display:flex;align-items:center;gap:12px;}
   .brand img{width:34px;height:auto;filter:drop-shadow(0 0 6px rgba(255,255,255,.08));}
-  .brand-name{font-family:'Cormorant Garamond',serif;font-size:19px;letter-spacing:.14em;color:var(--silver-bright);}
+  .brand-name{font-family:'Bodoni Moda',serif;font-size:19px;letter-spacing:.14em;color:var(--silver-bright);}
   .brand-name b{font-weight:600;}
   .nav-links{display:flex;gap:38px;align-items:center;}
   .nav-links a,.nav-links label{
@@ -138,7 +140,7 @@
   .hero-inner{position:relative;z-index:2;max-width:820px;}
   .hero .eyebrow{margin-bottom:22px;opacity:0;animation:fadeUp .9s ease forwards .3s;}
   .hero h1{
-    font-size:clamp(38px,6vw,68px);line-height:1.08;font-style:italic;font-weight:500;
+    font-size:clamp(38px,6vw,68px);line-height:1.08;font-style:normal;font-weight:500;
     opacity:0;animation:fadeUp 1s ease forwards .5s;
   }
   .hero h1 em{font-style:normal;font-weight:600;color:var(--silver-bright);}
@@ -187,7 +189,7 @@
   .about{text-align:center;padding:52px 0 64px;}
   .about .wrap{max-width:720px;}
   .about .eyebrow{margin-bottom:16px;}
-  .about h2{font-size:clamp(28px,4vw,40px);font-style:italic;margin-bottom:20px;line-height:1.25;}
+  .about h2{font-size:clamp(28px,4vw,40px);font-style:normal;margin-bottom:20px;line-height:1.25;}
   .about p{color:var(--graphite);font-size:15.5px;line-height:1.85;font-weight:300;}
 
   /* ---------- stats ---------- */
@@ -195,13 +197,13 @@
   .stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);}
   .stat{padding:56px 24px;text-align:center;border-left:1px solid var(--hairline);}
   .stat:first-child{border-left:none;}
-  .stat .num{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,52px);color:var(--silver-bright);font-weight:600;}
+  .stat .num{font-family:'Inter',sans-serif;font-size:clamp(32px,4vw,50px);color:var(--silver-bright);font-weight:700;letter-spacing:-.01em;}
   .stat .lbl{margin-top:8px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--graphite);}
 
   /* ---------- expertise ---------- */
   .section-head{text-align:center;max-width:640px;margin:0 auto 44px;}
   .section-head .eyebrow{margin-bottom:16px;}
-  .section-head h2{font-size:clamp(30px,4vw,44px);font-style:italic;line-height:1.2;}
+  .section-head h2{font-size:clamp(30px,4vw,44px);font-style:normal;line-height:1.2;}
 
   .grid-expertise{
     display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
@@ -214,7 +216,7 @@
   }
   .exp-card:hover{background:var(--panel);}
   .exp-card .mark{width:18px;height:18px;opacity:.8;flex-shrink:0;}
-  .exp-card h3{font-size:16.5px;font-weight:500;line-height:1.3;color:var(--silver-bright);font-style:italic;}
+  .exp-card h3{font-size:16.5px;font-weight:500;line-height:1.3;color:var(--silver-bright);font-style:normal;}
 
   /* ---------- gallery teaser ---------- */
   .gallery-grid{
@@ -237,14 +239,14 @@
   }
   .gallery-item:hover .gallery-caption{opacity:1;}
   .gallery-caption .eyebrow{color:var(--glint);margin-bottom:6px;font-size:10px;}
-  .gallery-caption h3{font-size:18px;font-style:italic;font-weight:500;color:var(--silver-bright);}
+  .gallery-caption h3{font-size:18px;font-style:normal;font-weight:500;color:var(--silver-bright);}
   .gallery-more{text-align:center;margin-top:36px;}
 
   /* ---------- partner / trust ---------- */
   .partner{background:var(--panel);}
   .partner .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
   .partner .eyebrow{margin-bottom:18px;}
-  .partner h2{font-size:clamp(26px,3.4vw,36px);font-style:italic;line-height:1.3;margin-bottom:22px;}
+  .partner h2{font-size:clamp(26px,3.4vw,36px);font-style:normal;line-height:1.3;margin-bottom:22px;}
   .partner p{color:var(--graphite);line-height:1.9;font-size:15.5px;}
   .quality-list{list-style:none;}
   .quality-list li{
@@ -258,7 +260,7 @@
   .marquee-wrap{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);overflow:hidden;padding:30px 0;}
   .marquee{display:flex;width:max-content;animation:scroll 34s linear infinite;}
   .marquee span{
-    font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:var(--graphite);
+    font-family:'Bodoni Moda',serif;font-style:italic;font-size:22px;color:var(--graphite);
     padding:0 34px;white-space:nowrap;display:flex;align-items:center;gap:34px;
   }
   .marquee span svg{width:10px;height:10px;opacity:.6;flex-shrink:0;}
@@ -268,7 +270,7 @@
   .mission{text-align:center;}
   .mission .wrap{max-width:780px;}
   .mission blockquote{
-    font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
+    font-family:'Bodoni Moda',serif;font-style:italic;font-weight:500;
     font-size:clamp(24px,3.6vw,38px);line-height:1.5;color:var(--silver-bright);
   }
   .mission cite{display:block;margin-top:30px;font-style:normal;font-family:'Jost';font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--graphite);}
@@ -277,7 +279,7 @@
   .contact{background:var(--panel);}
   .contact .wrap{max-width:760px;text-align:center;}
   .contact .eyebrow{margin-bottom:20px;}
-  .contact h2{font-size:clamp(30px,5vw,50px);font-style:italic;margin-bottom:24px;line-height:1.15;}
+  .contact h2{font-size:clamp(30px,5vw,50px);font-style:normal;margin-bottom:24px;line-height:1.15;}
   .contact p{color:var(--graphite);font-size:16px;line-height:1.8;margin-bottom:44px;}
   .contact-actions{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-bottom:64px;}
   .contact-grid{
@@ -293,8 +295,8 @@
   footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;}
   .foot-brand{display:flex;align-items:center;gap:12px;}
   .foot-brand img{width:26px;}
-  .foot-brand span{font-family:'Cormorant Garamond',serif;font-size:15px;letter-spacing:.1em;color:var(--silver-bright);}
-  .foot-tag{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--graphite);font-size:14px;}
+  .foot-brand span{font-family:'Bodoni Moda',serif;font-size:15px;letter-spacing:.1em;color:var(--silver-bright);}
+  .foot-tag{font-family:'Bodoni Moda',serif;font-style:italic;color:var(--graphite);font-size:14px;}
   .foot-copy{font-size:11px;color:var(--graphite);letter-spacing:.05em;}
 
   @media(max-width:860px){
@@ -327,7 +329,7 @@
     <div class="nav-links" id="navLinks">
       <a href="#expertise">Expertise</a>
       <label for="tab-gallery" class="nav-tab-link">Gallery</label>
-      <a href="#quality">Quality</a>
+      <a href="#clients">Clients</a>
       <a href="#partnership">Partnership</a>
       <a href="#contact">Contact</a>
     </div>
@@ -428,7 +430,7 @@
 <section id="gallery-cta" style="padding:56px 0;">
   <div class="wrap" style="text-align:center;">
     <div class="eyebrow" style="margin-bottom:14px;">From Our Workshop</div>
-    <h2 style="font-size:clamp(24px,3.4vw,32px);font-style:italic;margin-bottom:22px;">See the pieces we've brought to life</h2>
+    <h2 style="font-size:clamp(24px,3.4vw,32px);font-style:normal;margin-bottom:22px;">See the pieces we've brought to life</h2>
     <label for="tab-gallery" class="btn-primary" style="cursor:pointer;">View Full Gallery</label>
   </div>
 </section>
@@ -475,7 +477,7 @@
   </div>
 </div>
 
-<div class="wrap" style="text-align:center;padding-top:44px;">
+<div id="clients" class="wrap" style="text-align:center;padding-top:44px;">
   <div class="eyebrow">Some Of The Clients We Work With</div>
 </div>
 <div class="marquee-wrap" style="border-top:none;">
@@ -539,7 +541,7 @@
 <main id="gallery-view">
 <div class="page-head" style="text-align:center;padding:56px 28px 40px;">
   <div class="eyebrow" style="margin-bottom:16px;">Our Work</div>
-  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4.6vw,48px);font-style:italic;line-height:1.15;">A Closer Look at the Craft</h2>
+  <h2 style="font-family:'Bodoni Moda',serif;font-size:clamp(30px,4.6vw,48px);font-style:normal;line-height:1.15;">A Closer Look at the Craft</h2>
   <p style="margin:16px auto 0;max-width:480px;color:var(--graphite);font-size:14.5px;line-height:1.7;">A curated selection of pieces manufactured in-house — bridal sets, statement necklaces, and fine diamond jewellery, crafted for retailers across India.</p>
 </div>
 <div class="wrap">
